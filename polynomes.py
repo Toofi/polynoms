@@ -1,6 +1,6 @@
 def createPolynom(degree = int):
     polynom1 = []
-    for i in range(0,degree - 1):
+    for i in range(0,(int(degree) - 1)):
         print("Votre indice pour le degré",i," :")
         polynom1[i] = input()
     print(polynom1)
@@ -24,6 +24,10 @@ def operateOnPolynoms(polynomA = list, polynomB = list, operation = str):
 
 print("Vous pouvez effectuer des opérations sur les polynomes en choisissant les opérations suivantes : + pour addition, - pour soustraction, * pour multiplication")
 operation = input("Il est temps de choisir : ")
+
+degre = input("Sélectionner le degré de votre polynome : ")
+
+createPolynom(degre)
 
 polynom00 = [-2,5,0,-2,0,1]
 polynom01 = [-4,0,3,0,1]
