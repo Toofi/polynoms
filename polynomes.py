@@ -17,7 +17,7 @@ def operateOnPolynoms(polynomA = list, polynomB = list, operation = str):
         for i in range(len(polynomB)): polynomC[i] -= polynomB[i]
     elif operation == "*":
         for i in range(len(polynomA)): polynomC[i] += polynomA[i]
-        for i in range(len(polynomB)): polynomC[i] * polynomB[i]
+        for i in range(len(polynomB)): polynomC[i] = polynomA[i] * polynomB[i]
     else: print("Vous n'avez pas sélectionné le bon caractère pour effectuer une opération!")
     return polynomC
 
